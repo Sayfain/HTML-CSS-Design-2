@@ -419,3 +419,83 @@ header .container nav .form i {
 }
 
 /* End Design */
+/* Start portfolio */
+.portfolio {
+  padding: var(--section-padding) 0;
+}
+.portfolio .portfolio-section .category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.portfolio .portfolio-section .category ul {
+  display: flex;
+}
+.portfolio .portfolio-section .category ul li {
+  padding: 10px;
+  text-transform: uppercase;
+}
+.portfolio .portfolio-section .category ul .active {
+  color: white;
+  background-color: var(--main-color);
+}
+
+.portfolio .box-card {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio .box-card .card {
+  flex-basis: 100%;
+  position: relative;
+  perspective: 200px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .portfolio .box-card .card {
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 1199px) {
+  .portfolio .box-card .card {
+    flex-basis: 25%;
+  }
+}
+
+.portfolio .box-card .card img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: 0.5s;
+}
+.portfolio .box-card .card:hover img {
+  transform: rotate(5deg) translate3d(0px, 0px, 30px);
+}
+.portfolio .box-card .card .text {
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(240, 248, 255, 0.747);
+  position: absolute;
+  bottom: -50%;
+  transition: 0.5s;
+  font-size: 15px;
+}
+
+@media (max-width: 767px) {
+  .portfolio .box-card .card .text {
+    padding: 30px;
+    font-size: 20px;
+  }
+}
+
+.portfolio .box-card .card .text p {
+  color: var(--main-color);
+  padding-top: 5px;
+}
+.portfolio .box-card .card:hover .text {
+  bottom: 0;
+}
+
+/* End portfolio */
