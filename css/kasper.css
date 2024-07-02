@@ -318,11 +318,11 @@ header .container nav .form i {
 .services .container .service-content i {
   margin-right: 50px;
 }
-@media (max-width: 767px) {
+@media (max-width:767px) {
   .services .container .service-content i {
     margin-right: 0;
     margin-bottom: 50px;
-  }
+}
 }
 
 .services .container .service-content .col {
