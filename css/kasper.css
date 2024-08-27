@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -500,56 +503,50 @@ header .container nav .form i {
   bottom: 0;
 }
 .portfolio button {
-  position: absolute;
-  left: 50%;
-  margin-top: 50px;
-  transform: translateX(-50%);
-  color: black;
-  background-color: transparent;
   padding: 15px 20px;
-  text-transform: capitalize;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  position: relative;
+  background-color: transparent;
   border: 1px solid black;
-  box-shadow: 5px 5px 0 0 var(--main-color);
-  transition: 1s;
+  box-shadow: 15px 15px 0 var(--main-color);
+  cursor: pointer;
 }
-.portfolio button:hover {
-  box-shadow: inset 0px 0px 0px 40px var(--main-color);
-}
-
 /* End portfolio */
 /* Start video section */
 .video-section {
-  padding-top: var(--section-padding);
+  padding-top: var(--section-padding) 0 0 0;
   position: relative;
 }
 .video-section video {
   width: 100%;
 }
-.video-section .main {
-  background-color: var(--second-color);
-  position: absolute;
+.video-section .text {
   width: 100%;
+  position: absolute;
   top: 50%;
-  height: 25%;
   transform: translateY(-50%);
+  padding: 50px;
+  background-color: #00c5fc75;
+  color: white;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+}
+.video-section .text h3 {
   color: white;
 }
-.video-section .main .text h3 {
-  padding-bottom: 10px;
-}
-.video-section .main button {
+.video-section .text p {
+  margin-top: 20px;
   color: white;
-  background-color: #000000b4;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  /* border: none; */
 }
-
+.video-section button {
+  padding: 15px 20px;
+  background-color: transparent;
+  border: 1px solid black;
+  box-shadow: 15px 15px 0 var(--main-color);
+  margin-top: 20px;
+  cursor: pointer;
+}
 /* End video section */
 /* about section  */
 .about-section {
@@ -564,13 +561,11 @@ header .container nav .form i {
   margin-top: -120px;
   overflow: hidden;
 }
-
 @media (max-width: 767px) {
   .about-section .container img {
     bottom: -70px;
   }
 }
-
 .status {
   padding: var(--section-padding) 0;
   background-image: url(../assets/imgs/stats.png);
@@ -798,7 +793,6 @@ header .container nav .form i {
   border-radius: 5px;
   transform: translate(50%, -120%);
 }
-
 /* end skill */
 /* start quote */
 .quote {
@@ -966,10 +960,8 @@ header .container nav .form i {
   width: 500px;
   max-width: 100%;
 }
-
 .subscreibe form input[type="email"] {
   padding: 20px 20px 20px 60px;
-
   border: 1px solid white;
   border-right: none;
   background: none;
@@ -978,7 +970,6 @@ header .container nav .form i {
   outline: none;
   width: calc(100% - 130px);
 }
-
 .subscreibe form input[type="submit"] {
   width: 130px;
   background-color: var(--main-color);
@@ -1060,7 +1051,6 @@ header .container nav .form i {
 .contact-us .info {
   flex-basis: 25%;
 }
-
 .contact-us .info h4 {
   text-transform: uppercase;
   font-weight: 400;
@@ -1070,7 +1060,6 @@ header .container nav .form i {
 .contact-us .info h4:last-of-type {
   margin-top: 110px;
 }
-
 .contact-us .info .phone {
   margin: 20px 0;
   display: block;
@@ -1106,7 +1095,6 @@ footer::before {
   width: 100%;
   height: 100%;
 }
-
 footer .container {
   text-align: center;
   position: relative;
@@ -1114,7 +1102,6 @@ footer .container {
 footer .container img {
   margin-bottom: 20px;
 }
-
 footer .container p:not(.copyright) {
   padding: 10px;
   border-bottom: 1px solid white;
@@ -1131,5 +1118,4 @@ footer .copyright span {
   color: var(--main-color);
   font-size: bold;
 }
-
 /* end contuct  */
