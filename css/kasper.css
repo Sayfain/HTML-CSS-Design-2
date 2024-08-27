@@ -811,8 +811,9 @@ header .container nav .form i {
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(54, 48, 48, 0.511);
+  background-color: rgb(0 0 0 / 30%);
 }
+
 .quote .container q {
   display: block;
   margin-bottom: 20px;
@@ -903,3 +904,213 @@ header .container nav .form i {
   color: white;
   cursor: pointer;
 }
+
+/* contact-text */
+.pricing .container .contact-text {
+  text-align: center;
+  padding-top: var(--section-padding);
+}
+.pricing .container .contact-text p {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.pricing .container .contact-text a {
+  padding: 25px 40px;
+  margin: 25px auto;
+  border: none;
+  border-radius: 4px;
+  display: block;
+  transition: 0.5s;
+  width: fit-content;
+  background-color: #efefef;
+  text-decoration: none;
+  color: black;
+}
+.pricing .container .contact-text a:hover {
+  box-shadow: inset 100px 0px 0px 0px var(--main-color),
+    inset -100px 0px 0px 0px var(--main-color);
+  color: white;
+  cursor: pointer;
+}
+/* start subscribe */
+.subscreibe {
+  background-image: url(../assets/imgs/subscribe.jpg);
+  background-size: cover;
+  position: relative;
+  padding-bottom: var(--section-padding);
+  padding-top: var(--section-padding);
+  color: white;
+}
+.subscreibe::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 50%);
+}
+.subscreibe .container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.subscreibe form {
+  display: flex;
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+}
+
+.subscreibe form input[type="email"] {
+  padding: 20px 20px 20px 60px;
+
+  border: 1px solid white;
+  border-right: none;
+  background: none;
+  caret-color: var(--main-color);
+  color: white;
+  outline: none;
+  width: calc(100% - 130px);
+}
+
+.subscreibe form input[type="submit"] {
+  width: 130px;
+  background-color: var(--main-color);
+  color: white;
+  border: 1px solid white;
+  border-left: none;
+  padding: 10px 20px;
+}
+.subscreibe form ::placeholder {
+  color: white;
+}
+
+.subscreibe form i {
+  position: absolute;
+  font-size: 20px;
+  left: 20px;
+  top: 20px;
+}
+
+.subscreibe .container p {
+  margin-left: 50px;
+  line-height: var(--main-line-height);
+}
+
+@media (max-width: 991px) {
+  .subscreibe .container {
+    flex-direction: column;
+  }
+  .subscreibe .container p {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+/* end subscribe */
+/* start contuct  */
+.contact-us {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.contact-us .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .contact-us .content {
+    flex-direction: column-reverse;
+  }
+}
+.contact-us .content form {
+  flex-basis: 70%;
+}
+
+.contact-us .content .main-input {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 30px;
+  caret-color: var(--main-color);
+  border: 1px solid #cccccc;
+}
+.contact-us .content textarea.main-input {
+  height: 200px;
+}
+.contact-us .content .main-input:focus {
+  outline: none;
+}
+.contact-us .content form input:last-of-type {
+  padding: 20px;
+  background-color: var(--main-color);
+  margin-left: auto;
+  display: flex;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.contact-us .info {
+  flex-basis: 25%;
+}
+
+.contact-us .info h4 {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.contact-us .info h4:last-of-type {
+  margin-top: 110px;
+}
+
+.contact-us .info .phone {
+  margin: 20px 0;
+  display: block;
+  color: #636262;
+}
+.contact-us .info address {
+  line-height: var(--main-line-height);
+  color: #636262;
+}
+@media (max-width: 767px) {
+  .contact-us .info {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .contact-us .info h4:last-of-type {
+    margin-top: 50px;
+  }
+}
+footer {
+  padding: var(--section-padding) 0;
+  background-image: url(../assets/imgs/subscribe.jpg);
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(0 0 0 / 30%);
+  width: 100%;
+  height: 100%;
+}
+
+footer .container {
+  text-align: center;
+  position: relative;
+}
+footer .container img {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* end contuct  */
