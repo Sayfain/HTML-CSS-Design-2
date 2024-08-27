@@ -500,15 +500,20 @@ header .container nav .form i {
   bottom: 0;
 }
 .portfolio button {
-  color: white;
-  background-color: var(--main-color);
-  padding: 10px 20px;
-  text-transform: uppercase;
   position: absolute;
   left: 50%;
   margin-top: 50px;
   transform: translateX(-50%);
-  border-color: white;
+  color: black;
+  background-color: transparent;
+  padding: 15px 20px;
+  text-transform: capitalize;
+  border: 1px solid black;
+  box-shadow: 5px 5px 0 0 var(--main-color);
+  transition: 1s;
+}
+.portfolio button:hover {
+  box-shadow: inset 0px 0px 0px 40px var(--main-color);
 }
 
 /* End portfolio */
@@ -1086,7 +1091,7 @@ header .container nav .form i {
   }
 }
 footer {
-  padding: var(--section-padding) 0;
+  padding: calc(var(--section-padding) / 2) 0;
   background-image: url(../assets/imgs/subscribe.jpg);
   background-size: cover;
   color: white;
@@ -1107,10 +1112,24 @@ footer .container {
   position: relative;
 }
 footer .container img {
-  position: absolute;
-  top: -100%;
-  left: 50%;
-  transform: translate(-50%);
+  margin-bottom: 20px;
+}
+
+footer .container p:not(.copyright) {
+  padding: 10px;
+  border-bottom: 1px solid white;
+  width: fit-content;
+  margin: 0 auto 20px;
+}
+footer .container .account-icon i {
+  padding: 10px 15px;
+}
+footer .copyright {
+  margin-top: 50px;
+}
+footer .copyright span {
+  color: var(--main-color);
+  font-size: bold;
 }
 
 /* end contuct  */
